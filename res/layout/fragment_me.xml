@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huayull="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <com.ll.ydmusic.a.login_regist.mview.MyRoundImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/portrait_huge"
+        huayull:border_outside_color="#FF000000"
+        huayull:border_thickness="1dp" />
+
+</LinearLayout>

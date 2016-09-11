@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huayull="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_well2" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:clipChildren="false" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:clipChildren="false"
+                 >
+
+                <com.ll.ydmusic.a.login_regist.mview.MyYDTextview
+                    android:id="@+id/id_myYDTextview_1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    huayull:text_color_random="true"
+                    huayull:text_color="#FF00FF"
+                    huayull:text_ran="悦"
+                    huayull:text_size_ran="45sp" />
+
+                <com.ll.ydmusic.a.login_regist.mview.MyYDTextview
+                    android:id="@+id/id_myYDTextview_2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_myYDTextview_1"
+                    huayull:text_color_random="true"
+                    huayull:text_color="#9AFF9A"
+                    huayull:text_ran="动"
+                    huayull:text_size_ran="45sp" />
+
+                <com.ll.ydmusic.a.login_regist.mview.MyYDTextview
+                    android:id="@+id/id_myYDTextview_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/id_myYDTextview_2"
+                    android:layout_centerVertical="true"
+                    huayull:text_color_random="true"
+                    huayull:text_color="#1E90FF"
+                    huayull:text_ran="Music"
+                    huayull:text_size_ran="45sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="260dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal" >
+
+                    <!--
+                         <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top"
+                        android:background="@drawable/bg_border3"
+                        android:gravity="center"
+                        android:text="用户名"
+                        android:textColor="@color/Red" />
+                    -->
+
+                    <EditText
+                        android:id="@+id/et_login_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="Username(Phone)"
+                        android:maxLength="11"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <!--
+                         <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top"
+                        android:background="@drawable/bg_border3"
+                        android:gravity="center"
+                        
+                        android:text="密码"
+                        android:textColor="@color/Red" />
+                    -->
+
+                    <EditText
+                        android:id="@+id/et_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="Password"
+                        android:maxLength="10"
+                        android:password="true"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="25dp" />
+
+                    <Button
+                        android:id="@+id/bt_login_login"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_selector1"
+                        android:text="Sign in"
+                        android:textColor="#aa000000"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Not yet registered?"
+                        android:textColor="#88ff0000"
+                        android:textSize="15sp" />
+                    
+
+                    <Button
+                        android:id="@+id/bt_login_regist"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_selector1"
+                        android:text="Sign up"
+                        android:textColor="#aa000000"
+                        android:textSize="20sp" />
+                    <!-- 下方增添一个使用默认账户登录 -->
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="25dp" />
+
+                    <Button
+                        android:id="@+id/bt_login_backdoor"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_selector_backdoor"
+                        android:text="Default"
+                        android:textColor="#aa000000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:huayull="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal" >
+
+        <com.ll.ydmusic.ChangeColorIconWithText
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            huayull:icon="@drawable/ic_menu_start_conversation"
+            huayull:text="@string/tab_chat"
+            huayull:text_size="12sp"
+            huayull:color="#ff7fff00" />
+
+        <com.ll.ydmusic.ChangeColorIconWithText
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            huayull:icon="@drawable/ic_menu_friendslist"
+            huayull:text="@string/tab_contact"
+            huayull:text_size="12sp"
+            huayull:color="#ff97ffff" />
+
+        <ImageView
+            android:id="@+id/id_icon_music"
+            android:layout_width="0dip"
+            android:layout_height="64dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/item_imageicon" />
+
+        <com.ll.ydmusic.ChangeColorIconWithText
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            huayull:icon="@drawable/ic_menu_emoticons"
+            huayull:text="@string/tab_found"
+            huayull:text_size="12sp"
+            huayull:color="#ffba55d3" />
+
+        <com.ll.ydmusic.ChangeColorIconWithText
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            huayull:icon="@drawable/ic_menu_allfriends"
+            huayull:text="@string/tab_me"
+            huayull:text_size="12sp"
+            huayull:color="#ff787878" />
+    </LinearLayout>
+
+</LinearLayout>

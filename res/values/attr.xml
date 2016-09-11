@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- 这个是用于layout布局的 -->
+    <attr name="icon" format="reference"></attr>
+    <attr name="color" format="color"></attr>
+    <attr name="text" format="string"></attr>
+    <attr name="text_size" format="dimension"></attr>
+    
+    
+    
+    <!-- 这个主要是声明styleable。里面的四个attr是子元素 -->
+    <declare-styleable name="ChangeColorIconWithText">
+        <attr name="icon"></attr>
+        <attr name="color"></attr>
+        <attr name="text"></attr>
+        <attr name="text_size"></attr>
+    </declare-styleable>
+    
+    
+    <!-- MyYDTextview -->
+    <attr name="text_ran" format="string"></attr>
+    <attr name="text_color" format="color"></attr>
+     <attr name="text_size_ran" format="dimension"></attr>
+     <attr name="text_color_random" format="boolean"></attr>
+    
+    <declare-styleable name="MyYDTextview">
+        <attr name="text_ran"></attr>
+        <attr name="text_color"></attr>
+        <attr name="text_size_ran"></attr>
+        <attr name="text_color_random"></attr>
+        
+    </declare-styleable>
+    
+    
+    <!-- MyRoundImageView -->
+    <attr name="border_thickness" format="dimension"></attr>
+    <attr name="border_outside_color" format="color"></attr>
+     <attr name="border_inside_color" format="color"></attr>
+    
+    <declare-styleable name="MyRoundImageView">
+        <attr name="border_thickness"></attr>
+        <attr name="border_outside_color"></attr>
+        <attr name="border_inside_color"></attr>
+    </declare-styleable>
+    
+    
+    
+
+</resources>

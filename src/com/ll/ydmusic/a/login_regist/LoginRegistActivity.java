@@ -24,8 +24,8 @@ public class LoginRegistActivity extends Activity{
 			init_login_fragment();
 			init();
 			
-			// 初始化Bmob
-			init_Bmob();
+			// 按照文档说明，已经在applicaiton那里初始化了，这里就不用初始化Bmob
+			//init_Bmob();
 			
 		}
 		private void init_Bmob() {

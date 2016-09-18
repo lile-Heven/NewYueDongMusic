@@ -1,4 +1,4 @@
-package com.ll.ydmusic.main;
+package com.ll.ydmusic.musicmain;
 
 import com.imooc.weixin6_0.R;
 

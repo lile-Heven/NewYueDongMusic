@@ -1,4 +1,4 @@
-package com.ll.ydmusic.main;
+package com.ll.ydmusic.musicmain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ import android.widget.ImageView;
 
 import com.imooc.weixin6_0.R;
 import com.ll.ydmusic.MainActivity;
-import com.ll.ydmusic.main.madapter.mViewPagerAdapter;
+import com.ll.ydmusic.musicmain.madapter.mViewPagerAdapter;
 
 public class LaunchViewPagerActivity extends Activity {
 

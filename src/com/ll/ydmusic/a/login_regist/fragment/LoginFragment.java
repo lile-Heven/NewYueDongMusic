@@ -167,46 +167,8 @@ public class LoginFragment extends Fragment implements OnClickListener {
 		// 查询playerName叫“比目”的数据
 		query.addWhereEqualTo("userPhone", str_loginPhone);
 		// 执行查询方法
-		query.findObjects(new FindListener<MyUserMoreDetails>() {
-			@Override
-			public void done(List<MyUserMoreDetails> object, BmobException e) {
-
-				if (e == null) {
-					// 查询成功
-					Log.v("TAG0query", "e==null");
-
-					// toast("查询成功：共"+object.size()+"条数据。");
-
-					String userPhone = "";
-					String userPassword = "";
-					for (MyUserMoreDetails userDataOne : object) {
-						// 获得playerName的信息
-						userPhone = userDataOne.getUserPhone();
-						// 获得数据的objectId信息
-						// gameScore.getObjectId();
-						// 获得createdAt数据创建时间（注意是：createdAt，不是createAt）
-						userPassword = userDataOne.getUserPassword();
-
-					}
-					// userPhone.equals(str_loginPhone);
-					// userPassword.equals(str_loginPassword);
-					//
-					if (userPhone.equals(str_loginPhone)
-							&& userPassword.equals(str_loginPassword)) {
-						login_success();
-					} else {
-						Toast.makeText(getActivity(), "账户或密码不正确，登录失败",
-								Toast.LENGTH_LONG).show();
-					}
-
-				} else {
-					Log.v("TAG0query", "else");
-					//
-					Toast.makeText(getActivity(), "由于系统繁忙，查询失败，请稍候重试",
-							Toast.LENGTH_LONG).show();
-				}
-
-			}
+		query.findObjects(getActivity(), new FindListener<MyUserMoreDetails>() {
+			
 
 			private void login_success() {
 				// TODO 自动生成的方法存根
@@ -217,6 +179,47 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
 				getActivity().startActivity(intent);
 				getActivity().finish();
+				
+			}
+
+			@Override
+			public void onError(int arg0, String arg1) {
+				Log.v("TAG0query", "else");
+				//
+				Toast.makeText(getActivity(), "由于系统繁忙，查询失败，请稍候重试",
+						Toast.LENGTH_LONG).show();
+				
+			}
+
+			@Override
+			public void onSuccess(List<MyUserMoreDetails> object) {
+				// TODO 自动生成的方法存根
+				// 查询成功
+				Log.v("TAG0query", "e==null");
+
+				// toast("查询成功：共"+object.size()+"条数据。");
+
+				String userPhone = "";
+				String userPassword = "";
+				for (MyUserMoreDetails userDataOne : object) {
+					// 获得playerName的信息
+					userPhone = userDataOne.getUserPhone();
+					// 获得数据的objectId信息
+					// gameScore.getObjectId();
+					// 获得createdAt数据创建时间（注意是：createdAt，不是createAt）
+					userPassword = userDataOne.getUserPassword();
+
+				}
+				// userPhone.equals(str_loginPhone);
+				// userPassword.equals(str_loginPassword);
+				//
+				if (userPhone.equals(str_loginPhone)
+						&& userPassword.equals(str_loginPassword)) {
+					login_success();
+				} else {
+					Toast.makeText(getActivity(), "账户或密码不正确，登录失败",
+							Toast.LENGTH_LONG).show();
+				}
 				
 			}
 		});
@@ -238,46 +241,8 @@ public class LoginFragment extends Fragment implements OnClickListener {
 		// 查询playerName叫“比目”的数据
 		query.addWhereEqualTo("userPhone", str_loginPhone);
 		// 执行查询方法
-		query.findObjects(new FindListener<MyUserMoreDetails>() {
-			@Override
-			public void done(List<MyUserMoreDetails> object, BmobException e) {
-
-				if (e == null) {
-					// 查询成功
-					Log.v("TAG0query", "e==null");
-
-					// toast("查询成功：共"+object.size()+"条数据。");
-
-					String userPhone = "";
-					String userPassword = "";
-					for (MyUserMoreDetails userDataOne : object) {
-						// 获得playerName的信息
-						userPhone = userDataOne.getUserPhone();
-						// 获得数据的objectId信息
-						// gameScore.getObjectId();
-						// 获得createdAt数据创建时间（注意是：createdAt，不是createAt）
-						userPassword = userDataOne.getUserPassword();
-
-					}
-					// userPhone.equals(str_loginPhone);
-					// userPassword.equals(str_loginPassword);
-					//
-					if (userPhone.equals(str_loginPhone)
-							&& userPassword.equals(str_loginPassword)) {
-						login_success();
-					} else {
-						Toast.makeText(getActivity(), "账户或密码不正确，登录失败",
-								Toast.LENGTH_LONG).show();
-					}
-
-				} else {
-					Log.v("TAG0query", "else");
-					//
-					Toast.makeText(getActivity(), "由于系统繁忙，查询失败，请稍候重试",
-							Toast.LENGTH_LONG).show();
-				}
-
-			}
+		query.findObjects(getActivity(), new FindListener<MyUserMoreDetails>() {
+			
 
 			private void login_success() {
 				// TODO 自动生成的方法存根
@@ -287,6 +252,46 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
 				getActivity().startActivity(intent);
 				getActivity().finish();
+			}
+
+			@Override
+			public void onError(int arg0, String arg1) {
+				// TODO 自动生成的方法存根
+				Log.v("TAG0query", "else");
+				//
+				Toast.makeText(getActivity(), "由于系统繁忙，查询失败，请稍候重试",
+						Toast.LENGTH_LONG).show();
+			}
+
+			@Override
+			public void onSuccess(List<MyUserMoreDetails> object) {
+				// TODO 自动生成的方法存根
+				// 查询成功
+				Log.v("TAG0query", "e==null");
+
+				// toast("查询成功：共"+object.size()+"条数据。");
+
+				String userPhone = "";
+				String userPassword = "";
+				for (MyUserMoreDetails userDataOne : object) {
+					// 获得playerName的信息
+					userPhone = userDataOne.getUserPhone();
+					// 获得数据的objectId信息
+					// gameScore.getObjectId();
+					// 获得createdAt数据创建时间（注意是：createdAt，不是createAt）
+					userPassword = userDataOne.getUserPassword();
+
+				}
+				// userPhone.equals(str_loginPhone);
+				// userPassword.equals(str_loginPassword);
+				//
+				if (userPhone.equals(str_loginPhone)
+						&& userPassword.equals(str_loginPassword)) {
+					login_success();
+				} else {
+					Toast.makeText(getActivity(), "账户或密码不正确，登录失败",
+							Toast.LENGTH_LONG).show();
+				}
 			}
 		});
 

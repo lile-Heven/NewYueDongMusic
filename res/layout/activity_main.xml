@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
-    android:background="#ffffffff"
+    android:background="@color/White"
     android:orientation="vertical" >
 
     <android.support.v4.view.ViewPager
@@ -13,7 +13,14 @@
         android:layout_height="0dp"
         android:layout_weight="1" >
     </android.support.v4.view.ViewPager>
-
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/dividerline_mid_space_mainlayout"
+        android:orientation="vertical" >
+	    
+	</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"

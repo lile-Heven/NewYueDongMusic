@@ -1,4 +1,4 @@
-package com.ll.ydmusic.main.madapter;
+package com.ll.ydmusic.musicmain.madapter;
 
 import java.util.List;
 

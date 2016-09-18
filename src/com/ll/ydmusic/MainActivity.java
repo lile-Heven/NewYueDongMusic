@@ -7,24 +7,28 @@ import java.util.List;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewConfiguration;
 import android.view.Window;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.imooc.weixin6_0.R;
 import com.ll.ydmusic.fragment_f4.FragmentFirst_Chat;
 import com.ll.ydmusic.fragment_f4.FragmentForth_Me;
 import com.ll.ydmusic.fragment_f4.FragmentSecond_Contact;
 import com.ll.ydmusic.fragment_f4.FragmentThird_Find;
-import com.ll.ydmusic.main.LaunchActivity;
+import com.ll.ydmusic.musicmain.LaunchActivity;
 
 public class MainActivity extends FragmentActivity implements OnClickListener,
 		OnPageChangeListener
@@ -45,7 +49,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+	//	requestWindowFeature(Window.);
+		//setFeatureDrawableResource(Window.FEATURE_LEFT_ICON, R.drawable.item_imageicon);
+		
 		setContentView(R.layout.activity_main);
+		//findViewById(com.android.internal.R.id.search_close_btn);
+		
 		setOverflowButtonAlways();
 		getActionBar().setDisplayShowHomeEnabled(false);
 		//getActionBar().hide();
@@ -58,8 +67,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		mViewPager.setAdapter(mAdapter);
 		
 		initEvent();
+		//连接bmob的即时通讯服务器
+		//connect_bmobService();
 
 	}
+
 
 	/**
 	 * 初始化所有事件
@@ -165,11 +177,29 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 
 		one.setIconAlpha(1.0f);
 	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
+		
+		
 		getMenuInflater().inflate(R.menu.main, menu);
+		
+		//MenuItem search = menu.findItem(R.id.action_search);
+       /* search.collapseActionView();
+        //是搜索框默认展开
+//        search.expandActionView();
+        SearchView searchView = (SearchView)search.getActionView();
+        //显示搜索确认按钮
+        searchView.setSubmitButtonEnabled(true);
+        //找到搜索按钮对应的LinearLayout
+        int searchPlateId = searchView.getContext().getResources().getIdentifier("android:id/submit_area", null, null);
+        LinearLayout searchPlate = (LinearLayout)searchView.findViewById(searchPlateId);
+        //拿到搜索图标的imageview,这样就可以修改图片了
+        ((ImageView)searchPlate.getChildAt(0)).setImageResource(R.drawable.item_imageicon);  
+	        
+        int searchPlateId2 = searchView.getContext().getResources().getIdentifier("android:id/search_voice_btn", null, null);
+        ImageView a = (ImageView)searchView.findViewById(searchPlateId2);
+        a.setImageResource(R.drawable.item_imageicon);*/
 		return true;
 	}
 
@@ -307,6 +337,49 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		// TODO Auto-generated method stub
 
 	}
+	
+	
+	
+	//--------------------------------------
+	//以下代码：在主界面按返回键两次才退出activity
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		// TODO 自动生成的方法存根
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exit();
+            return false;
+        }
+		
+		return super.onKeyDown(keyCode, event);
+	}
+	private void exit() {
+        if (!isExit) {
+            isExit = true;
+            Toast.makeText(getApplicationContext(), "再按一次返回键退出(后台运行请按Home键)",
+            		Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getApplicationContext(), "后台运行请按Home键",
+//                    Toast.LENGTH_SHORT).show();
+            
+            // 利用handler延迟发送更改状态信息
+            mExitHandler.sendEmptyMessageDelayed(0, 2000);
+        } else {
+        	onDestroy();
+        	finish();
+        	
+            System.exit(0);
+        }
+    }
+	
+
+	private static boolean isExit = false;
+	Handler mExitHandler = new Handler() {
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            isExit = false;
+        }
+    };
 	
 	
 

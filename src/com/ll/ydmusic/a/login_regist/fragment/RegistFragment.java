@@ -127,28 +127,31 @@ public class RegistFragment extends Fragment implements OnClickListener {
 				new MyUserMoreDetails(str_password, str_nickName, str_phone,
 						str_email, str_identityCard, str_trueName);
 		
-		myUserMoreDetails.save(new SaveListener<String>() {
+		myUserMoreDetails.save(getActivity(), new SaveListener() {
+			
+			
+
 			
 			@Override
-			public void done(String objectId, BmobException e) {
-				// TODO 自动生成的方法存根
-				 if(e==null){
-					 //注册成功
-					 
-					 Toast.makeText(getActivity(), "欢迎加入悦动。请记住您的账户："+str_phone, Toast.LENGTH_LONG).show();
-			            //toast("添加数据成功，返回objectId为："+objectId);
-					 
-					 //关闭此fragment
-					 close_RegistFragment();
-					 
-			        }else{
-			        	//注册失败
-			        	Toast.makeText(getActivity(),"由于系统繁忙，注册失败，请稍候重试", Toast.LENGTH_LONG).show();
-			            //toast("创建数据失败：" + e.getMessage());
-			        }
-				
+			public void onFailure(int arg0, String arg1) {
+				//注册失败
+	        	Toast.makeText(getActivity(),"由于系统繁忙，注册失败，请稍候重试", Toast.LENGTH_LONG).show();
+	            //toast("创建数据失败：" + e.getMessage());
+	        
 			}
 
+			@Override
+			public void onSuccess() {
+				//注册成功
+				 
+				 Toast.makeText(getActivity(), "欢迎加入悦动。请记住您的账户："+str_phone, Toast.LENGTH_LONG).show();
+		            //toast("添加数据成功，返回objectId为："+objectId);
+				 
+				 //关闭此fragment
+				 close_RegistFragment();
+			}
+			
+			
 			private void close_RegistFragment() {
 				// TODO 自动生成的方法存根
 				Fragment frag = getActivity().getFragmentManager().findFragmentByTag("RegistFragment");
@@ -163,6 +166,7 @@ public class RegistFragment extends Fragment implements OnClickListener {
 					e.printStackTrace();
 				}
 			}
+
 		});
 	}
 
@@ -184,43 +188,42 @@ public class RegistFragment extends Fragment implements OnClickListener {
 		
 		
 		//执行查询方法
-		query.findObjects(new FindListener<MyUserMoreDetails>() {
-		    @Override
-		    public void done(List<MyUserMoreDetails> object, BmobException e) {
-		    	
-		    	/**/
-		    	Log.v("TAG0", "object==null||object.size()>=1==false");
-		        if(e==null){
-		        	//查询成功
-		        	Log.v("TAG0query", "e==null");
-		        	if(object.size()>=1)
-			    	{
-		            	
-		        		Toast.makeText(getActivity(), "很抱歉，此账号已经存在。", Toast.LENGTH_LONG).show();
-		            	return ;
-			    	}
-		        	//简单到没有被注册后，再添加
-					add_one_new_data();
-					
-		            //toast("查询成功：共"+object.size()+"条数据。");
-		            
-		           // for (MyUserMoreDetails gameScore : object) {
-		               //获得playerName的信息
-		               //gameScore.getUserPhone();
-		               //获得数据的objectId信息
-		               // gameScore.getObjectId();
-		               //获得createdAt数据创建时间（注意是：createdAt，不是createAt）
-		               //gameScore.getCreatedAt();
-		        	
-		        }else{
-		        	Log.v("TAG0query", "else");
-		        	//查询失败
-		        	//Toast.makeText(getActivity(),"由于系统繁忙，查询失败，请稍候重试", Toast.LENGTH_LONG).show();
-		        }
-		        
-		        
-	
-		    }
+		query.findObjects(getActivity(), new FindListener<MyUserMoreDetails>() {
+			
+
+			@Override
+			public void onError(int arg0, String arg1) {
+				
+				Log.v("TAG0query", "else");
+	        	//查询失败
+	        	//Toast.makeText(getActivity(),"由于系统繁忙，查询失败，请稍候重试", Toast.LENGTH_LONG).show();
+	       
+			}
+
+			@Override
+			public void onSuccess(List<MyUserMoreDetails> object) {
+				//查询成功
+	        	Log.v("TAG0query", "e==null");
+	        	if(object.size()>=1)
+		    	{
+	            	
+	        		Toast.makeText(getActivity(), "很抱歉，此账号已经存在。", Toast.LENGTH_LONG).show();
+	            	return ;
+		    	}
+	        	//简单到没有被注册后，再添加
+				add_one_new_data();
+				
+	            //toast("查询成功：共"+object.size()+"条数据。");
+	            
+	           // for (MyUserMoreDetails gameScore : object) {
+	               //获得playerName的信息
+	               //gameScore.getUserPhone();
+	               //获得数据的objectId信息
+	               // gameScore.getObjectId();
+	               //获得createdAt数据创建时间（注意是：createdAt，不是createAt）
+	               //gameScore.getCreatedAt();
+	        	
+			}
 		});
 		/*try {
 			Thread.sleep(15000);

@@ -1,6 +1,7 @@
 package com.ll.ydmusic.fragment_f4;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,9 @@ public class FragmentFirst_Chat extends Fragment {
 
 
 
+	private TextView tv_marquee;
+	private TextView tv_startconversation;
+
 	@Override
 	public View getView() {
 		// TODO 自动生成的方法存根
@@ -29,6 +33,8 @@ public class FragmentFirst_Chat extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO 自动生成的方法存根
 		super.onActivityCreated(savedInstanceState);
+		tv_marquee.isFocused();
+		tv_marquee.performClick();
 	}
 
 	@Override
@@ -60,10 +66,12 @@ public class FragmentFirst_Chat extends Fragment {
 			Bundle savedInstanceState) {
 		
 		//不能填container，否则会崩
-		View v=inflater.inflate(R.layout.fragment_chat, null);
-		TextView tv=(TextView) v.findViewById(R.id.id_tv_fragment_chat);
-		tv.isFocused();
-		// TODO 自动生成的方法存根
+		View v=inflater.inflate(R.layout.fragment_chat, null);//通过充气机将布局转化为View，方法最后返回此View
+		
+		tv_marquee=(TextView) v.findViewById(R.id.tv_marquee_fragment_chat);//跑马灯的文字视图
+		tv_startconversation=(TextView) v.findViewById(R.id.tv_startconversation_fragment_chat);//启动会话的文字视图
+		
+		
 		return v;
 	}
 
@@ -77,6 +85,12 @@ public class FragmentFirst_Chat extends Fragment {
 	public void onDestroyOptionsMenu() {
 		// TODO 自动生成的方法存根
 		super.onDestroyOptionsMenu();
+	}
+
+	@Override
+	public void onAttach(Context context) {
+		// TODO 自动生成的方法存根
+		super.onAttach(context);
 	}
 
 	@Override
@@ -107,8 +121,11 @@ public class FragmentFirst_Chat extends Fragment {
 	public void onResume() {
 		// TODO 自动生成的方法存根
 		super.onResume();
-		TextView tv=(TextView) getActivity().findViewById(R.id.id_tv_fragment_chat);
-		tv.isFocused();
+		TextView tv_marquee=(TextView) getActivity().findViewById(R.id.tv_marquee_fragment_chat);
+		tv_marquee.isFocused();
+		tv_marquee.callOnClick();
+		tv_marquee.performClick();
+		tv_marquee.performLongClick();
 	}
 
 	@Override
@@ -121,6 +138,13 @@ public class FragmentFirst_Chat extends Fragment {
 	public void onStart() {
 		// TODO 自动生成的方法存根
 		super.onStart();
+		/*
+		 * 貌似无效呀
+		 * tv.isFocused();
+		tv.performClick();
+		tv.callOnClick();
+		tv.performClick();
+		tv.performLongClick();*/
 	}
 
 	@Override

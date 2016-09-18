@@ -1,19 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:huayull="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:background="#ffffffff"
-    android:orientation="vertical" >
+    android:background="@color/Gray_BackGround"
+    android:layout_height="match_parent" >
 
-    <com.ll.ydmusic.a.login_regist.mview.MyRoundImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:src="@drawable/portrait_huge"
-        huayull:border_outside_color="#FF000000"
-        huayull:border_thickness="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Gray_BackGround"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <!-- 栏目_个人资料 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.ll.ydmusic.a.login_regist.mview.MyRoundImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/portrait_huge"
+                huayull:border_outside_color="#FF000000"
+                huayull:border_thickness="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="时过境迁9124"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/my_edit" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:text="您还没有填写描述哦"
+                        android:textColor="@color/Gray_Font"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 栏目_我的成就 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_my_achievement"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_chengjiu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_my_achievement"
+                android:gravity="center_vertical"
+                android:text="我的成就"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_我的阅历 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_my_experience"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_yueli" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_my_experience"
+                android:gravity="center_vertical"
+                android:text="我的阅历"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_我的随笔 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_my_essay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_suibi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_my_essay"
+                android:gravity="center_vertical"
+                android:text="我的随笔"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_我的收藏 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_my_collection"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_collect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_my_collection"
+                android:gravity="center_vertical"
+                android:text="我的收藏"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_我的离线 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_my_offline"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_lixian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_my_offline"
+                android:gravity="center_vertical"
+                android:text="我的离线"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_账户设置 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_account_settings"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_shezhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_account_settings"
+                android:gravity="center_vertical"
+                android:text="账户设置"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_使用帮助 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_use_help"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_bangzhu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_use_help"
+                android:gravity="center_vertical"
+                android:text="使用帮助"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_意见反馈 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_suggestions_feedback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/my_yijianfankui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_suggestions_feedback"
+                android:gravity="center_vertical"
+                android:text="意见反馈"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" />
+        </RelativeLayout>
+        <!-- 栏目_意见反馈 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="@color/White" >
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -167,7 +167,7 @@ public class MyYDTextview extends View {
 
 		mTextPaint.setAntiAlias(true);
 
-		Log.v("TAG", randomAlpha + "");
+		//Log.v("TAG", randomAlpha + "");
 
 		mTextPaint.setTextSize(mTextSize);
 

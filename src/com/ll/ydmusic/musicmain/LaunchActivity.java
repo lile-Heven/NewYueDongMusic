@@ -1,4 +1,4 @@
-package com.ll.ydmusic.main;
+package com.ll.ydmusic.musicmain;
 
 import android.app.Activity;
 import android.content.Intent;

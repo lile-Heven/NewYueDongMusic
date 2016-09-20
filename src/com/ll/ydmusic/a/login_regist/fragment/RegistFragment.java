@@ -24,14 +24,14 @@ import com.ll.ydmusic.a.login_regist.bmob.MyUserMoreDetails;
 
 public class RegistFragment extends Fragment implements OnClickListener {
 
-	private EditText regist_et_phone;
-	private EditText regist_et_yzm;
-	private EditText regist_et_nickname;
-	private EditText regist_et_password;
-	private EditText regist_et_true_name;
-	private EditText regist_et_identity_card;
-	private Button regist_bt_regist;
-	private EditText regist_et_email;
+	private EditText regist_et_phone; //手机号码
+	private EditText regist_et_yzm;//验证码
+	private EditText regist_et_nickname;//昵称
+	private EditText regist_et_password;//密码
+	private EditText regist_et_true_name;//真名
+	private EditText regist_et_identity_card;//身份证
+	private EditText regist_et_email;//邮箱
+	private Button regist_bt_regist;//注册按钮
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -123,7 +123,7 @@ public class RegistFragment extends Fragment implements OnClickListener {
 		}	*/		
 		
 		
-		MyUserMoreDetails myUserMoreDetails=
+		final MyUserMoreDetails myUserMoreDetails=
 				new MyUserMoreDetails(str_password, str_nickName, str_phone,
 						str_email, str_identityCard, str_trueName);
 		
@@ -144,14 +144,28 @@ public class RegistFragment extends Fragment implements OnClickListener {
 			public void onSuccess() {
 				//注册成功
 				 
-				 Toast.makeText(getActivity(), "欢迎加入悦动。请记住您的账户："+str_phone, Toast.LENGTH_LONG).show();
+				 Toast.makeText(getActivity(), "欢迎进入悦动的世界。请记住您的账户："+str_phone, Toast.LENGTH_LONG).show();
 		            //toast("添加数据成功，返回objectId为："+objectId);
 				 
+				//把数据持久化到SQLite里面。
+				data_persistence(myUserMoreDetails);
+					
 				 //关闭此fragment
 				 close_RegistFragment();
+		
 			}
 			
-			
+			/**
+			 * 当注册页面的数据成功 提交到服务器以后，把数据持久化到本地。（SQLite）
+			 * @param myUserMoreDetails
+			 */
+			private void data_persistence(MyUserMoreDetails myUserMoreDetails) {
+				// TODO 自动生成的方法存根
+				
+				
+				
+			}
+
 			private void close_RegistFragment() {
 				// TODO 自动生成的方法存根
 				Fragment frag = getActivity().getFragmentManager().findFragmentByTag("RegistFragment");
@@ -168,7 +182,11 @@ public class RegistFragment extends Fragment implements OnClickListener {
 			}
 
 		});
+		
+		
+		
 	}
+
 
 	private void check_phone_isExisted() {
 		
@@ -210,8 +228,10 @@ public class RegistFragment extends Fragment implements OnClickListener {
 	        		Toast.makeText(getActivity(), "很抱歉，此账号已经存在。", Toast.LENGTH_LONG).show();
 	            	return ;
 		    	}
-	        	//简单到没有被注册后，再添加
+	        	//检查到没有被注册后，再添加
 				add_one_new_data();
+				
+				
 				
 	            //toast("查询成功：共"+object.size()+"条数据。");
 	            
@@ -224,6 +244,7 @@ public class RegistFragment extends Fragment implements OnClickListener {
 	               //gameScore.getCreatedAt();
 	        	
 			}
+
 		});
 		/*try {
 			Thread.sleep(15000);

@@ -29,7 +29,11 @@ import com.ll.ydmusic.fragment_f4.FragmentForth_Me;
 import com.ll.ydmusic.fragment_f4.FragmentSecond_Contact;
 import com.ll.ydmusic.fragment_f4.FragmentThird_Find;
 import com.ll.ydmusic.musicmain.LaunchActivity;
-
+/**
+ * 这是有四个变色自定义view的主界面Activity
+ * @author admin
+ *
+ */
 public class MainActivity extends FragmentActivity implements OnClickListener,
 		OnPageChangeListener
 {
@@ -65,6 +69,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		initView();
 		initDatas();
 		mViewPager.setAdapter(mAdapter);
+		mViewPager.setCurrentItem(3, true);
 		
 		initEvent();
 		//连接bmob的即时通讯服务器
@@ -87,9 +92,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	{
 		initFragments();
 
-		
-		
-		
 		
 		
 		mAdapter = new FragmentPagerAdapter(getSupportFragmentManager())
@@ -156,7 +158,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	}
 
 	/**
-	 * 
+	 * 初始化Tab(Button)
 	 */
 	private void init_mButtons() {
 		mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
@@ -175,7 +177,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		three.setOnClickListener(this);
 		four.setOnClickListener(this);
 
-		one.setIconAlpha(1.0f);
+		//one.setIconAlpha(1.0f);
+		four.setIconAlpha(1.0f);
 	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)

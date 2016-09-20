@@ -5,6 +5,7 @@ import java.util.List;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Handler.Callback;
@@ -123,7 +124,9 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
 			fragmentTransaction.addToBackStack(null);
 			fragmentTransaction.commit();
+			
 			break;
+			
 		case R.id.bt_login_login:
 			// 开启新线程去执行网络行为
 			/*
@@ -152,16 +155,16 @@ public class LoginFragment extends Fragment implements OnClickListener {
 	}
 
 	private void login_from_backdoor() {
-		// TODO 自动生成的方法存根
-		// TODO 自动生成的方法存根
-		final String str_loginPhone = "13530007739";
-		final String str_loginPassword = "123456789";
-		// |位运算符 ||或
-		if (str_loginPhone.equals("") || str_loginPassword.equals("")) {
-			Toast.makeText(getActivity(), "账户或密码为空，登录失败", Toast.LENGTH_SHORT)
-					.show();
-			return;
-		}
+
+		//通过sharedpreferences来获得上一次成功登录时候缓存的号码
+		SharedPreferences sharedPreference1 = getActivity().getSharedPreferences("DEFAULT_PHONE", getActivity().MODE_PRIVATE );
+
+		//Log.v("TAG", "LoginFromBackdoor: shredpref--DEFAULT_PHONE是否存在？"+sharedPreference1.toString());
+		
+		String phone_last_success=sharedPreference1.getString("PHONE", "13530007739");
+		
+		final String str_loginPhone =phone_last_success;
+		
 
 		BmobQuery<MyUserMoreDetails> query = new BmobQuery<MyUserMoreDetails>();
 		// 查询playerName叫“比目”的数据
@@ -171,7 +174,6 @@ public class LoginFragment extends Fragment implements OnClickListener {
 			
 
 			private void login_success() {
-				// TODO 自动生成的方法存根
 
 				Toast.makeText(getActivity(), "尊贵的用户："+str_loginPhone+"，欢迎进入悦动的世界！",
 						Toast.LENGTH_LONG).show();
@@ -184,7 +186,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
 			@Override
 			public void onError(int arg0, String arg1) {
-				Log.v("TAG0query", "else");
+				Log.v("TAG0query", "onError:"+arg1);
 				//
 				Toast.makeText(getActivity(), "由于系统繁忙，查询失败，请稍候重试",
 						Toast.LENGTH_LONG).show();
@@ -193,7 +195,6 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
 			@Override
 			public void onSuccess(List<MyUserMoreDetails> object) {
-				// TODO 自动生成的方法存根
 				// 查询成功
 				Log.v("TAG0query", "e==null");
 
@@ -207,14 +208,11 @@ public class LoginFragment extends Fragment implements OnClickListener {
 					// 获得数据的objectId信息
 					// gameScore.getObjectId();
 					// 获得createdAt数据创建时间（注意是：createdAt，不是createAt）
-					userPassword = userDataOne.getUserPassword();
+					//userPassword = userDataOne.getUserPassword();
 
 				}
-				// userPhone.equals(str_loginPhone);
-				// userPassword.equals(str_loginPassword);
-				//
 				if (userPhone.equals(str_loginPhone)
-						&& userPassword.equals(str_loginPassword)) {
+						) {
 					login_success();
 				} else {
 					Toast.makeText(getActivity(), "账户或密码不正确，登录失败",
@@ -227,7 +225,6 @@ public class LoginFragment extends Fragment implements OnClickListener {
 	}
 
 	private void check_account_and_pwd() {
-		// TODO 自动生成的方法存根
 		final String str_loginPhone = et_login_phone.getText().toString();
 		final String str_loginPassword = et_login_password.getText().toString();
 		// |位运算符 ||或
@@ -245,6 +242,10 @@ public class LoginFragment extends Fragment implements OnClickListener {
 			
 
 			private void login_success() {
+				
+				//把登录成功的手机号码缓存到sharedpreferences里面，供default按钮调用
+				default_phonenumber_memory();
+				
 				// TODO 自动生成的方法存根
 				Toast.makeText(getActivity(), "尊贵的用户："+str_loginPhone+"，欢迎进入悦动的世界！",
 						Toast.LENGTH_LONG).show();
@@ -252,6 +253,17 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
 				getActivity().startActivity(intent);
 				getActivity().finish();
+			}
+			/**
+			 * 把登录成功的手机号码缓存到sharedpreferences里面，供default按钮调用
+			 */
+			private void default_phonenumber_memory() {
+				// TODO 自动生成的方法存根
+				SharedPreferences sharedPreference1 = getActivity().getSharedPreferences("DEFAULT_PHONE", getActivity().MODE_PRIVATE );
+				
+				sharedPreference1.edit().putString("PHONE", str_loginPhone.trim()).commit();
+				
+				Log.v("TAG", "sharedPref更改成功："+str_loginPhone.trim());
 			}
 
 			@Override

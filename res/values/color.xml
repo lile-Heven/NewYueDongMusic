@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Nothing">#00000000</color><!--透明 --> 
+    <color name="DodgerBlue">#ff1E90FF</color>
+    <color name="Gray_BackGround">#ffeeeeee</color><!--背景灰 --> 
+    <color name="Gray_Font">#ff999999</color><!--字体灰 --> 
+    <color name="Gray_DividerLine">#D1D1D1</color><!--灰色-分隔线 --> 
+    
+    
+    <color name="Black">#ff000000</color><!--纯黑色 --> 
+    <color name="Black_Font_Content">#585858</color><!--中黑色-字体-内容 --> 
+    
+    
+    
+    <color name="SpringGreen">#ff00FF7F</color>
+    <color name="White">#ffFFFFFF</color><!--大白色 --> 
+    <color name="Red">#ffFF0000</color><!--大红色 --> 
+    <color name="Alpha99">#99000000</color>
+    <color name="Alpha66">#66000000</color>
+    <color name="Alpha33">#33000000</color>
+    <color name="deepskyblue">#00bfff</color><!--深天蓝色 --> 
+    <color name="Blue_Deep">#0066ff</color><!--深蓝色 --> 
+    <color name="Blue_Font_Name">#9EADC4</color><!--暗蓝色-字体-名字 --> 
+    <color name="Blue_Font_Cancel">#616D9E</color><!--深暗蓝色-字体-名字 --> 
+    
+    
+    
+    <color name="DarkViolet">#9400d3</color><!--暗紫罗兰 --> 
+    <color name="Purple_Actionbar">#db00ff</color><!--标题栏背景紫 --> 
+    <color name="Black_Actionbar">#363636</color><!--标题栏背景黑 --> 
+    <color name="Blue_Actionbar">#5CACEE</color><!--标题栏背景蓝 --> 
+    <color name="Pink_Title">#EE7AE9</color><!--标题粉红--> 
+    
+    <color name="BurlyWood">#DEB887</color><!-- --> 
+    <color name="Coral">#FF7F50</color><!-- --> 
+    
+</resources>

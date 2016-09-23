@@ -71,6 +71,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		mViewPager.setAdapter(mAdapter);
 		mViewPager.setCurrentItem(3, true);
 		
+		mViewPager.setOffscreenPageLimit(3);//设置缓存页面数理，防止FragmentMe数据重新加载
+		
 		initEvent();
 		//连接bmob的即时通讯服务器
 		//connect_bmobService();

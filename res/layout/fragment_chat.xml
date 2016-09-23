@@ -11,7 +11,7 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:textSize="16sp"
-        android:text=" 欢迎各位朋友来到悦动Music! 悦动的世界因你而精彩！"
+        android:text="@string/fragment_chat_title"
         android:textColor="#ff777777"
         android:marqueeRepeatLimit="marquee_forever"
         android:scrollHorizontally="true"

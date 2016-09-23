@@ -16,13 +16,13 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
                 android:clipChildren="false"
                  >
 
-                <com.ll.ydmusic.a.login_regist.mview.MyYDTextview
+                <!-- <com.ll.ydmusic.a.login_regist.mview.MyYDTextview
                     android:id="@+id/id_myYDTextview_1"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
@@ -51,7 +51,31 @@
                     huayull:text_color_random="true"
                     huayull:text_color="#1E90FF"
                     huayull:text_ran="Music"
-                    huayull:text_size_ran="45sp" />
+                    huayull:text_size_ran="45sp" /> -->
+                    
+                    
+                   <TextView 
+                       android:id="@+id/tv_yuedongdeshijie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:text="悦动"
+                    android:textSize="45sp"
+                    android:typeface="normal"
+                    android:textColor="@color/Pink_Title"
+                       />
+                   
+                   <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_yuedongdeshijie"
+                    android:text="---因你而精彩。"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="210dp"
+                    android:typeface="monospace"
+                    android:textColor="@color/Blue_Deep"
+                       />
+                   
             </RelativeLayout>
 
             <LinearLayout

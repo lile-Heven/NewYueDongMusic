@@ -125,7 +125,7 @@ public class RegistFragment extends Fragment implements OnClickListener {
 		
 		final MyUserMoreDetails myUserMoreDetails=
 				new MyUserMoreDetails(str_password, str_nickName, str_phone,
-						str_email, str_identityCard, str_trueName);
+						str_email, str_identityCard, str_trueName, "HeadImg_Cartoon2");
 		
 		myUserMoreDetails.save(getActivity(), new SaveListener() {
 			

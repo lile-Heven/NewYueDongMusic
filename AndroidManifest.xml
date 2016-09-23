@@ -77,14 +77,15 @@
         </activity>
         <activity android:name="com.ll.ydmusic.musicmain.LaunchViewPagerActivity" >
         </activity>
-        <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver" >
+        
+        <!-- <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver" >
         	<intent-filter>
             	<action android:name="cn.bmob.action.RECONNECT" />
             	<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             	<action android:name="android.intent.action.BOOT_COMPLETED" />
             	<action android:name="android.intent.action.USER_PRESENT" />
         	</intent-filter>
-  		</receiver>
+  		</receiver> -->
   		
   		<service
    			 android:name="cn.bmob.newim.core.service.BmobIMService"

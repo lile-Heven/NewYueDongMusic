@@ -96,6 +96,11 @@ public class MyRoundImageView extends ImageView {
 		// 这里有个classcastexception。。换个方法
 		// GradientDrawable
 		 Bitmap b = ((BitmapDrawable) drawable).getBitmap();
+		 
+		 /*if(b==null){
+			 return;
+		 }*/
+		 
 		 Bitmap bitmap = b.copy(Bitmap.Config.ARGB_8888, true);
 
 		//Bitmap bitmap=drawable2Bitmap(drawable);

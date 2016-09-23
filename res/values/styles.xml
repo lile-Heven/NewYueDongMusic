@@ -35,8 +35,30 @@
     </style>
 
     <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">@color/Purple_Title</item>
+        <item name="android:background">@color/Blue_Actionbar</item>
+        <!-- <item name="android:actionOverflowButtonStyle">@style/weixinActionOverflowButtonStyle</item> -->
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item> 
     </style>
+    
+    
+    <style name="OverflowButtonStyle">
+        <item name="android:src">@drawable/actionbar_add_icon</item>
+    </style>
+    
+      <style name="AppBaseThemeButton" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:actionOverflowButtonStyle">@style/weixinActionOverflowButtonStyle</item>
+    </style>
+
+    <style name="weixinActionOverflowButtonStyle">
+        <item name="android:src">@drawable/actionbar_add_icon</item>
+    </style>
+    
+    <style name="AcBar_titleStyle">    
+        <item name="android:textSize">18sp</item>  
+        <item name="android:textColor">#FFFFFF</item>    
+    </style>  
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">

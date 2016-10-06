@@ -3,7 +3,7 @@
     xmlns:huayull="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login_well2" >
+    android:background="@drawable/friendscc_bg_login_well2" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -164,7 +164,7 @@
                         android:id="@+id/bt_login_login"
                         android:layout_width="130dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/bg_selector1"
+                        android:background="@drawable/friendscc_bg_selector1"
                         android:text="Sign in"
                         android:textColor="#aa000000"
                         android:textSize="20sp" />
@@ -186,7 +186,7 @@
                         android:id="@+id/bt_login_regist"
                         android:layout_width="130dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/bg_selector1"
+                        android:background="@drawable/friendscc_bg_selector1"
                         android:text="Sign up"
                         android:textColor="#aa000000"
                         android:textSize="20sp" />
@@ -199,7 +199,7 @@
                         android:id="@+id/bt_login_backdoor"
                         android:layout_width="130dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/bg_selector_backdoor"
+                        android:background="@drawable/friendscc_bg_selector_backdoor"
                         android:text="Default"
                         android:textColor="#aa000000"
                         android:textSize="20sp" />

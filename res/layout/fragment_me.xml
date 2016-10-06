@@ -29,7 +29,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:padding="5dp"
-                android:src="@drawable/avatar"
+                android:src="@drawable/friendscc_avatar"
                 huayull:border_outside_color="#FF000000"
                 huayull:border_thickness="1dp" />
 
@@ -58,7 +58,7 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="10dp"
-                        android:background="@drawable/my_edit" />
+                        android:background="@drawable/friendscc_my_edit" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -90,7 +90,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_chengjiu" />
+                android:src="@drawable/friendscc_my_chengjiu" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_我的阅历 -->
 
@@ -122,7 +122,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_yueli" />
+                android:src="@drawable/friendscc_my_yueli" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_我的随笔 -->
 
@@ -154,7 +154,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_suibi" />
+                android:src="@drawable/friendscc_my_suibi" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -170,7 +170,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_我的收藏 -->
 
@@ -186,7 +186,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_collect" />
+                android:src="@drawable/friendscc_my_collect" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -202,7 +202,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_我的离线 -->
 
@@ -218,7 +218,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_lixian" />
+                android:src="@drawable/friendscc_my_lixian" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -234,7 +234,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_账户设置 -->
 
@@ -250,7 +250,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_shezhi" />
+                android:src="@drawable/friendscc_my_shezhi" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -266,7 +266,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_使用帮助 -->
 
@@ -282,7 +282,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_bangzhu" />
+                android:src="@drawable/friendscc_my_bangzhu" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -298,7 +298,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_意见反馈 -->
 
@@ -314,7 +314,7 @@
                 android:layout_height="50dp"
                 android:padding="2dp"
                 android:scaleType="center"
-                android:src="@drawable/my_yijianfankui" />
+                android:src="@drawable/friendscc_my_yijianfankui" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -330,7 +330,7 @@
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:scaleType="center"
-                android:src="@drawable/my_arrow_gray" />
+                android:src="@drawable/friendscc_my_arrow_gray" />
         </RelativeLayout>
         <!-- 栏目_意见反馈 -->
 

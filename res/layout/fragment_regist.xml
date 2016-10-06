@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="35dp"
-    android:background="@drawable/bg_login_regist_well66"
+    android:background="@drawable/friendscc_bg_login_regist_well66"
     android:orientation="vertical" >
 
     <EditText
@@ -22,7 +22,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="30dp"
         android:paddingLeft="5dp"
-        android:background="@drawable/bg_border2"
+        android:background="@drawable/friendscc_bg_border2"
         android:singleLine="true"
         android:hint="手机号码(账户名)(必填)"
         android:maxLength="11"
@@ -42,7 +42,7 @@
             android:paddingLeft="5dp"
             android:singleLine="true"
             android:layout_weight="1"
-            android:background="@drawable/bg_border2"
+            android:background="@drawable/friendscc_bg_border2"
             android:hint="请输入手机验证码" />
 
         <Button
@@ -50,7 +50,7 @@
             android:layout_height="35dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:background="@drawable/bg_selector1"
+            android:background="@drawable/friendscc_bg_selector1"
             android:gravity="center"
             android:text="发送验证码"
             android:textColor="@color/White" />
@@ -63,7 +63,7 @@
         android:paddingLeft="5dp"
         android:layout_marginTop="10dp"
         android:singleLine="true"
-        android:background="@drawable/bg_border2"
+        android:background="@drawable/friendscc_bg_border2"
         android:hint="昵称" />
 
     <EditText
@@ -73,7 +73,7 @@
         android:layout_marginTop="10dp"
         android:paddingLeft="5dp"
         android:singleLine="true"
-        android:background="@drawable/bg_border2"
+        android:background="@drawable/friendscc_bg_border2"
         android:password="true"
         android:hint="密码（6位~10）(必填)"
         android:maxLength="10" />
@@ -85,7 +85,7 @@
         android:layout_marginTop="10dp"
         android:singleLine="true"
         android:paddingLeft="5dp"
-        android:background="@drawable/bg_border2"
+        android:background="@drawable/friendscc_bg_border2"
         android:hint="姓名" />
 
     <EditText
@@ -95,7 +95,7 @@
         android:singleLine="true"
         android:layout_marginTop="10dp"
         android:paddingLeft="5dp"
-        android:background="@drawable/bg_border2"
+        android:background="@drawable/friendscc_bg_border2"
         android:hint="身份证" />
     <EditText
         android:id="@+id/regist_et_email"
@@ -104,7 +104,7 @@
         android:layout_marginTop="10dp"
         android:singleLine="true"
         android:paddingLeft="5dp"
-        android:background="@drawable/bg_border2"
+        android:background="@drawable/friendscc_bg_border2"
         android:hint="邮箱" />
 
     <CheckBox
@@ -119,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/bg_selector1"
+        android:background="@drawable/friendscc_bg_selector1"
         android:gravity="center"
         android:hint="注 册"
         android:paddingLeft="25dp"

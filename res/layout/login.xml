@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login_well2"
+    android:background="@drawable/friendscc_bg_login_well2"
     android:orientation="vertical" >
 
     <FrameLayout
         android:id="@+id/fl_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_login_well2" >
+        android:background="@drawable/friendscc_bg_login_well2" >
     </FrameLayout>
 
 </LinearLayout>

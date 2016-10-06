@@ -233,7 +233,9 @@ public class LoginFragment extends Fragment implements OnClickListener {
 					.show();
 			return;
 		}
-
+		/*Toast.makeText(getActivity(), "请稍等...", Toast.LENGTH_SHORT)
+		.show();*/
+		
 		BmobQuery<MyUserMoreDetails> query = new BmobQuery<MyUserMoreDetails>();
 		// 查询playerName叫“比目”的数据
 		query.addWhereEqualTo("userPhone", str_loginPhone);

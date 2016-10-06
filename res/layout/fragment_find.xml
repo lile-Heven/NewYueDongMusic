@@ -6,6 +6,37 @@
     	<!-- <TextView 
     	    
     	    /> -->
+    	<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/iv_fragmentfind_friendsCircle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:scaleType="center"
+                android:src="@drawable/friendscircle_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/iv_fragmentfind_friendsCircle"
+                android:gravity="center_vertical"
+                android:text="朋友圈"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <!-- <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/my_arrow_gray" /> -->
+        </RelativeLayout>
+        
     	<GridView 
     	    android:layout_width="match_parent"
     	    android:layout_height="match_parent"

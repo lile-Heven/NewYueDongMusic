@@ -17,7 +17,7 @@
         android:text="点此进入"
         android:textSize="25dp"
         android:textColor="@color/DodgerBlue"
-        android:background="@drawable/selector_button_circle_corner"
+        android:background="@drawable/friendscc_selector_button_circle_corner"
         />
     
     

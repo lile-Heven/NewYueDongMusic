@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="com.example.displaydynamic.FriendsCircle_MainActivity" >
+
+    <!--
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_inside_sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:background="@drawable/view_head_friendsactivity2"
+                    
+                     />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_main_for_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Nothing"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_main_for_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/Gray_BackGround"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/edit_main"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/fragmentfind_input_bar_bg_active"
+                    android:gravity="center_vertical|left"
+                    android:hint=""
+                    android:textColor="@color/Black_Font_Content"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bt_edit_send"
+                    android:layout_width="68dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/fragmentfind_selector_friendactivity_popup_edit_send"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="发送"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    	<!-- 压下去时 -->
+    <item android:state_pressed="true"
+        	android:drawable="@color/Black"></item>
+	<!--     	压下去时
+    <item android:state_pressed="true"
+        	android:drawable="@drawable/friendactivity_comment_frame_normal"></item> -->
+		
+</selector>

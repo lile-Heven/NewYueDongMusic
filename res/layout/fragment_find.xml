@@ -7,27 +7,30 @@
     	    
     	    /> -->
     	<RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/White" >
+    	    android:id="@+id/rl_fragmentfind_friendscc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="120dp"
+            
+            android:background="@drawable/fragmentfind_selector_friendactivity_popup_comment" >
 
             <ImageView
                 android:id="@+id/iv_fragmentfind_friendsCircle"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:padding="2dp"
-                android:scaleType="center"
+                android:scaleType="centerCrop"
                 android:src="@drawable/friendscircle_icon" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_toRightOf="@id/iv_fragmentfind_friendsCircle"
+                android:layout_below="@id/iv_fragmentfind_friendsCircle"
                 android:gravity="center_vertical"
                 android:text="朋友圈"
                 android:textColor="@color/Black"
-                android:textSize="16sp" />
+                android:textSize="32sp" />
 
             <!-- <ImageView
                 android:layout_width="50dp"

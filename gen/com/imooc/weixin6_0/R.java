@@ -108,66 +108,69 @@ containing a value of this type.
         public static final int text_size_ran=0x7f010006;
     }
     public static final class color {
-        public static final int Alpha33=0x7f05000c;
-        public static final int Alpha66=0x7f05000b;
-        /** 大红色 
-         */
-        public static final int Alpha99=0x7f05000a;
+        public static final int Alpha33=0x7f050002;
+        public static final int Alpha66=0x7f050001;
+        public static final int Alpha99=0x7f050000;
         /** 灰色-分隔线 
          */
-        public static final int Black=0x7f050005;
+        public static final int Black=0x7f050008;
         /** 标题栏背景紫 
          */
-        public static final int Black_Actionbar=0x7f050013;
+        public static final int Black_Actionbar=0x7f050014;
         /** 纯黑色 
          */
-        public static final int Black_Font_Content=0x7f050006;
+        public static final int Black_Font_Content=0x7f050009;
         /** 标题栏背景黑 
          */
-        public static final int Blue_Actionbar=0x7f050014;
+        public static final int Blue_Actionbar=0x7f050015;
         /** 深天蓝色 
          */
-        public static final int Blue_Deep=0x7f05000e;
+        public static final int Blue_Deep=0x7f05000f;
         /** 暗蓝色-字体-名字 
          */
-        public static final int Blue_Font_Cancel=0x7f050010;
+        public static final int Blue_Font_Cancel=0x7f050011;
         /** 深蓝色 
          */
-        public static final int Blue_Font_Name=0x7f05000f;
+        public static final int Blue_Font_Name=0x7f050010;
         /** 标题粉红
          */
-        public static final int BurlyWood=0x7f050016;
+        public static final int BurlyWood=0x7f050017;
         /**  
          */
-        public static final int Coral=0x7f050017;
+        public static final int Coral=0x7f050018;
         /** 深暗蓝色-字体-名字 
          */
-        public static final int DarkViolet=0x7f050011;
+        public static final int DarkViolet=0x7f050012;
         /** 透明 
          */
-        public static final int DodgerBlue=0x7f050001;
-        public static final int Gray_BackGround=0x7f050002;
+        public static final int DodgerBlue=0x7f050004;
+        public static final int Gray_BackGround=0x7f050005;
         /** 字体灰 
          */
-        public static final int Gray_DividerLine=0x7f050004;
+        public static final int Gray_DividerLine=0x7f050007;
         /** 背景灰 
          */
-        public static final int Gray_Font=0x7f050003;
-        public static final int Nothing=0x7f050000;
-        /** 标题栏背景蓝 
-         */
-        public static final int Pink_Title=0x7f050015;
-        /** 暗紫罗兰 
-         */
-        public static final int Purple_Actionbar=0x7f050012;
-        /** 大白色 
-         */
-        public static final int Red=0x7f050009;
+        public static final int Gray_Font=0x7f050006;
         /** 中黑色-字体-内容 
          */
-        public static final int SpringGreen=0x7f050007;
-        public static final int White=0x7f050008;
-        public static final int deepskyblue=0x7f05000d;
+        public static final int Green_Button_Background=0x7f05000a;
+        public static final int Nothing=0x7f050003;
+        /** 标题栏背景蓝 
+         */
+        public static final int Pink_Title=0x7f050016;
+        /** 暗紫罗兰 
+         */
+        public static final int Purple_Actionbar=0x7f050013;
+        /** 大白色 
+         */
+        public static final int Red=0x7f05000d;
+        /** 暗绿色-按钮-背景 
+         */
+        public static final int SpringGreen=0x7f05000b;
+        public static final int White=0x7f05000c;
+        /** 大红色 
+         */
+        public static final int deepskyblue=0x7f05000e;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -182,121 +185,157 @@ containing a value of this type.
     public static final class drawable {
         public static final int actionbar_add_icon=0x7f020000;
         public static final int actionbar_search_icon=0x7f020001;
-        public static final int friendactivity_comment_list_normal=0x7f020002;
-        public static final int friendscc_avatar=0x7f020003;
-        public static final int friendscc_bg_border2=0x7f020004;
-        public static final int friendscc_bg_border3=0x7f020005;
-        public static final int friendscc_bg_fragment=0x7f020006;
-        public static final int friendscc_bg_fragment_login=0x7f020007;
-        public static final int friendscc_bg_fragment_login_gs=0x7f020008;
-        public static final int friendscc_bg_fragment_me=0x7f020009;
-        public static final int friendscc_bg_login_regist_well=0x7f02000a;
-        public static final int friendscc_bg_login_regist_well2=0x7f02000b;
-        public static final int friendscc_bg_login_regist_well4=0x7f02000c;
-        public static final int friendscc_bg_login_regist_well66=0x7f02000d;
-        public static final int friendscc_bg_login_regist_yun=0x7f02000e;
-        public static final int friendscc_bg_login_well=0x7f02000f;
-        public static final int friendscc_bg_login_well2=0x7f020010;
-        public static final int friendscc_bg_selector1=0x7f020011;
-        public static final int friendscc_bg_selector2=0x7f020012;
-        public static final int friendscc_bg_selector3=0x7f020013;
-        public static final int friendscc_bg_selector_backdoor=0x7f020014;
-        public static final int friendscc_btn_login_backdoor_normal=0x7f020015;
-        public static final int friendscc_btn_login_backdoor_pressed=0x7f020016;
-        public static final int friendscc_btn_login_regist_normal=0x7f020017;
-        public static final int friendscc_btn_login_regist_pressed=0x7f020018;
-        public static final int friendscc_dividerline_mid_space_mainlayout=0x7f020019;
-        public static final int friendscc_headimg_cartoon2=0x7f02001a;
-        public static final int friendscc_ic_launcher=0x7f02001b;
-        public static final int friendscc_item_imageicon=0x7f02001c;
-        public static final int friendscc_my_arrow_gray=0x7f02001d;
-        public static final int friendscc_my_bangzhu=0x7f02001e;
-        public static final int friendscc_my_chengjiu=0x7f02001f;
-        public static final int friendscc_my_collect=0x7f020020;
-        public static final int friendscc_my_edit=0x7f020021;
-        public static final int friendscc_my_lixian=0x7f020022;
-        public static final int friendscc_my_share=0x7f020023;
-        public static final int friendscc_my_shezhi=0x7f020024;
-        public static final int friendscc_my_suibi=0x7f020025;
-        public static final int friendscc_my_yijianfankui=0x7f020026;
-        public static final int friendscc_my_yueli=0x7f020027;
-        public static final int friendscc_pic_cover=0x7f020028;
-        public static final int friendscc_selector_button_circle_corner=0x7f020029;
-        public static final int friendscc_shape_button_circle_corner=0x7f02002a;
-        public static final int friendscc_shape_button_circle_corner_pressed=0x7f02002b;
-        public static final int friendscc_tab_address_normal=0x7f02002c;
-        public static final int friendscc_tab_bg=0x7f02002d;
-        public static final int friendscc_tab_find_frd_normal=0x7f02002e;
-        public static final int friendscircle_icon=0x7f02002f;
-        public static final int ic_menu_allfriends=0x7f020030;
-        public static final int ic_menu_emoticons=0x7f020031;
-        public static final int ic_menu_friendslist=0x7f020032;
-        public static final int ic_menu_start_conversation=0x7f020033;
-        public static final int launcher_point_current=0x7f020034;
-        public static final int launcher_point_default=0x7f020035;
-        public static final int men_scan_icon=0x7f020036;
-        public static final int menu_add_icon=0x7f020037;
-        public static final int menu_feedback_icon=0x7f020038;
-        public static final int menu_group_chat_icon=0x7f020039;
-        public static final int portrait_huge=0x7f02003a;
-        public static final int portrait_liyifeng=0x7f02003b;
-        public static final int portrait_zhaoliyin=0x7f02003c;
-        public static final int tab_settings_normal=0x7f02003d;
-        public static final int tab_weixin_normal=0x7f02003e;
-        public static final int viewpager_view1=0x7f02003f;
-        public static final int viewpager_view2=0x7f020040;
-        public static final int viewpager_view3=0x7f020041;
+        public static final int fragmentfind_bg_login_regist_well4=0x7f020002;
+        public static final int fragmentfind_ccc=0x7f020003;
+        public static final int fragmentfind_cloud_acceleration=0x7f020004;
+        public static final int fragmentfind_comment=0x7f020005;
+        public static final int fragmentfind_friendscc_comment_frame_bg=0x7f020006;
+        public static final int fragmentfind_friendscc_comment_frame_normal=0x7f020007;
+        public static final int fragmentfind_friendscc_comment_list_normal=0x7f020008;
+        public static final int fragmentfind_headimg_cartoon2=0x7f020009;
+        public static final int fragmentfind_ic_launcher=0x7f02000a;
+        public static final int fragmentfind_ic_launcher222=0x7f02000b;
+        public static final int fragmentfind_icon_commend=0x7f02000c;
+        public static final int fragmentfind_icon_comment=0x7f02000d;
+        public static final int fragmentfind_icon_popup_comment=0x7f02000e;
+        public static final int fragmentfind_icon_popup_comment2=0x7f02000f;
+        public static final int fragmentfind_input_bar_bg_active=0x7f020010;
+        public static final int fragmentfind_item_imageicon=0x7f020011;
+        public static final int fragmentfind_lalala=0x7f020012;
+        public static final int fragmentfind_selector_button_circle_corner=0x7f020013;
+        public static final int fragmentfind_selector_friendactivity_popup_comment=0x7f020014;
+        public static final int fragmentfind_selector_friendactivity_popup_edit_send=0x7f020015;
+        public static final int fragmentfind_shape_button_circle_corner=0x7f020016;
+        public static final int fragmentfind_shape_button_circle_corner_pressed=0x7f020017;
+        public static final int fragmentfind_shape_friendactivity_popup_edit_send_normal=0x7f020018;
+        public static final int fragmentfind_shape_friendactivity_popup_edit_send_pressed=0x7f020019;
+        public static final int fragmentfind_singledog=0x7f02001a;
+        public static final int friendactivity_comment_list_normal=0x7f02001b;
+        public static final int friendscc_avatar=0x7f02001c;
+        public static final int friendscc_bg_border2=0x7f02001d;
+        public static final int friendscc_bg_border3=0x7f02001e;
+        public static final int friendscc_bg_fragment=0x7f02001f;
+        public static final int friendscc_bg_fragment_login=0x7f020020;
+        public static final int friendscc_bg_fragment_login_gs=0x7f020021;
+        public static final int friendscc_bg_fragment_me=0x7f020022;
+        public static final int friendscc_bg_login_regist_well=0x7f020023;
+        public static final int friendscc_bg_login_regist_well2=0x7f020024;
+        public static final int friendscc_bg_login_regist_well4=0x7f020025;
+        public static final int friendscc_bg_login_regist_well66=0x7f020026;
+        public static final int friendscc_bg_login_regist_yun=0x7f020027;
+        public static final int friendscc_bg_login_well=0x7f020028;
+        public static final int friendscc_bg_login_well2=0x7f020029;
+        public static final int friendscc_bg_selector1=0x7f02002a;
+        public static final int friendscc_bg_selector2=0x7f02002b;
+        public static final int friendscc_bg_selector3=0x7f02002c;
+        public static final int friendscc_bg_selector_backdoor=0x7f02002d;
+        public static final int friendscc_btn_login_backdoor_normal=0x7f02002e;
+        public static final int friendscc_btn_login_backdoor_pressed=0x7f02002f;
+        public static final int friendscc_btn_login_regist_normal=0x7f020030;
+        public static final int friendscc_btn_login_regist_pressed=0x7f020031;
+        public static final int friendscc_dividerline_mid_space_mainlayout=0x7f020032;
+        public static final int friendscc_headimg_cartoon2=0x7f020033;
+        public static final int friendscc_ic_launcher=0x7f020034;
+        public static final int friendscc_item_imageicon=0x7f020035;
+        public static final int friendscc_my_arrow_gray=0x7f020036;
+        public static final int friendscc_my_bangzhu=0x7f020037;
+        public static final int friendscc_my_chengjiu=0x7f020038;
+        public static final int friendscc_my_collect=0x7f020039;
+        public static final int friendscc_my_edit=0x7f02003a;
+        public static final int friendscc_my_lixian=0x7f02003b;
+        public static final int friendscc_my_share=0x7f02003c;
+        public static final int friendscc_my_shezhi=0x7f02003d;
+        public static final int friendscc_my_suibi=0x7f02003e;
+        public static final int friendscc_my_yijianfankui=0x7f02003f;
+        public static final int friendscc_my_yueli=0x7f020040;
+        public static final int friendscc_pic_cover=0x7f020041;
+        public static final int friendscc_selector_button_circle_corner=0x7f020042;
+        public static final int friendscc_shape_button_circle_corner=0x7f020043;
+        public static final int friendscc_shape_button_circle_corner_pressed=0x7f020044;
+        public static final int friendscc_tab_address_normal=0x7f020045;
+        public static final int friendscc_tab_bg=0x7f020046;
+        public static final int friendscc_tab_find_frd_normal=0x7f020047;
+        public static final int friendscircle_icon=0x7f020048;
+        public static final int ic_menu_allfriends=0x7f020049;
+        public static final int ic_menu_emoticons=0x7f02004a;
+        public static final int ic_menu_friendslist=0x7f02004b;
+        public static final int ic_menu_start_conversation=0x7f02004c;
+        public static final int launcher_point_current=0x7f02004d;
+        public static final int launcher_point_default=0x7f02004e;
+        public static final int men_scan_icon=0x7f02004f;
+        public static final int menu_add_icon=0x7f020050;
+        public static final int menu_feedback_icon=0x7f020051;
+        public static final int menu_group_chat_icon=0x7f020052;
+        public static final int portrait_huge=0x7f020053;
+        public static final int portrait_liyifeng=0x7f020054;
+        public static final int portrait_zhaoliyin=0x7f020055;
+        public static final int tab_settings_normal=0x7f020056;
+        public static final int tab_weixin_normal=0x7f020057;
+        public static final int view_head_friendsactivity=0x7f020058;
+        public static final int view_head_friendsactivity2=0x7f020059;
+        public static final int viewpager_view1=0x7f02005a;
+        public static final int viewpager_view2=0x7f02005b;
+        public static final int viewpager_view3=0x7f02005c;
     }
     public static final class id {
-        public static final int action_add_friend=0x7f09002e;
-        public static final int action_feedback=0x7f090030;
-        public static final int action_group_chat=0x7f09002d;
-        public static final int action_scan=0x7f09002f;
-        public static final int action_search=0x7f09002c;
-        public static final int bt_login_backdoor=0x7f09000e;
-        public static final int bt_login_login=0x7f09000c;
-        public static final int bt_login_regist=0x7f09000d;
-        public static final int bt_viewpager_view3=0x7f09002b;
-        public static final int et_login_password=0x7f09000b;
-        public static final int et_login_phone=0x7f09000a;
-        public static final int fl_login=0x7f090024;
+        public static final int action_add_friend=0x7f090037;
+        public static final int action_feedback=0x7f090039;
+        public static final int action_group_chat=0x7f090036;
+        public static final int action_scan=0x7f090038;
+        public static final int action_search=0x7f090035;
+        public static final int bt_edit_send=0x7f09002a;
+        public static final int bt_login_backdoor=0x7f09000f;
+        public static final int bt_login_login=0x7f09000d;
+        public static final int bt_login_regist=0x7f09000e;
+        public static final int bt_viewpager_view3=0x7f090034;
+        public static final int edit_main=0x7f090029;
+        public static final int et_login_password=0x7f09000c;
+        public static final int et_login_phone=0x7f09000b;
+        public static final int fl_login=0x7f09002d;
         public static final int id_icon_music=0x7f090003;
         public static final int id_indicator_four=0x7f090005;
         public static final int id_indicator_one=0x7f090001;
         public static final int id_indicator_three=0x7f090004;
         public static final int id_indicator_two=0x7f090002;
         public static final int id_viewpager=0x7f090000;
-        public static final int iv_account_settings=0x7f090017;
-        public static final int iv_fragmentfind_friendsCircle=0x7f090008;
-        public static final int iv_launch_activity=0x7f090023;
-        public static final int iv_my_achievement=0x7f090012;
-        public static final int iv_my_collection=0x7f090015;
-        public static final int iv_my_edit=0x7f090011;
-        public static final int iv_my_essay=0x7f090014;
-        public static final int iv_my_experience=0x7f090013;
-        public static final int iv_my_offline=0x7f090016;
-        public static final int iv_suggestions_feedback=0x7f090019;
-        public static final int iv_use_help=0x7f090018;
-        public static final int iv_viewpager_bottom=0x7f090026;
-        public static final int iv_viewpager_point1=0x7f090028;
-        public static final int iv_viewpager_point2=0x7f090029;
-        public static final int iv_viewpager_point3=0x7f09002a;
-        public static final int launch_button=0x7f090022;
-        public static final int ll_viewpager_bottom=0x7f090027;
-        public static final int myroundiv_headimg=0x7f09000f;
-        public static final int regist_bt_regist=0x7f090021;
-        public static final int regist_et_email=0x7f090020;
-        public static final int regist_et_identity_card=0x7f09001f;
-        public static final int regist_et_nickname=0x7f09001c;
-        public static final int regist_et_password=0x7f09001d;
-        public static final int regist_et_phone=0x7f09001a;
-        public static final int regist_et_true_name=0x7f09001e;
-        public static final int regist_et_yzm=0x7f09001b;
+        public static final int iv_account_settings=0x7f090018;
+        public static final int iv_fragmentfind_friendsCircle=0x7f090009;
+        public static final int iv_launch_activity=0x7f09002c;
+        public static final int iv_my_achievement=0x7f090013;
+        public static final int iv_my_collection=0x7f090016;
+        public static final int iv_my_edit=0x7f090012;
+        public static final int iv_my_essay=0x7f090015;
+        public static final int iv_my_experience=0x7f090014;
+        public static final int iv_my_offline=0x7f090017;
+        public static final int iv_suggestions_feedback=0x7f09001a;
+        public static final int iv_use_help=0x7f090019;
+        public static final int iv_viewpager_bottom=0x7f09002f;
+        public static final int iv_viewpager_point1=0x7f090031;
+        public static final int iv_viewpager_point2=0x7f090032;
+        public static final int iv_viewpager_point3=0x7f090033;
+        public static final int launch_button=0x7f09002b;
+        public static final int ll1_popup=0x7f090023;
+        public static final int ll2_popup=0x7f090024;
+        public static final int ll_bottom_main_for_edit=0x7f090028;
+        public static final int ll_inside_sv=0x7f090026;
+        public static final int ll_viewpager_bottom=0x7f090030;
+        public static final int myroundiv_headimg=0x7f090010;
+        public static final int regist_bt_regist=0x7f090022;
+        public static final int regist_et_email=0x7f090021;
+        public static final int regist_et_identity_card=0x7f090020;
+        public static final int regist_et_nickname=0x7f09001d;
+        public static final int regist_et_password=0x7f09001e;
+        public static final int regist_et_phone=0x7f09001b;
+        public static final int regist_et_true_name=0x7f09001f;
+        public static final int regist_et_yzm=0x7f09001c;
+        public static final int rl_fragmentfind_friendscc=0x7f090008;
+        public static final int rl_main_for_edit=0x7f090027;
+        public static final int sv=0x7f090025;
         public static final int tv_marquee_fragment_chat=0x7f090006;
-        public static final int tv_my_nickname=0x7f090010;
+        public static final int tv_my_nickname=0x7f090011;
         public static final int tv_startconversation_fragment_chat=0x7f090007;
-        public static final int tv_yuedongdeshijie=0x7f090009;
-        public static final int viewpager=0x7f090025;
+        public static final int tv_yuedongdeshijie=0x7f09000a;
+        public static final int viewpager=0x7f09002e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -307,10 +346,13 @@ containing a value of this type.
         public static final int fragment_login=0x7f030005;
         public static final int fragment_me=0x7f030006;
         public static final int fragment_regist=0x7f030007;
-        public static final int launch=0x7f030008;
-        public static final int login=0x7f030009;
-        public static final int viewpager_activity=0x7f03000a;
-        public static final int viewpager_view3=0x7f03000b;
+        public static final int friendsacitivity_item_gridview=0x7f030008;
+        public static final int friendsactivity_layout_popupwindow_comment=0x7f030009;
+        public static final int friendsactivity_main=0x7f03000a;
+        public static final int launch=0x7f03000b;
+        public static final int login=0x7f03000c;
+        public static final int viewpager_activity=0x7f03000d;
+        public static final int viewpager_view3=0x7f03000e;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -318,6 +360,7 @@ containing a value of this type.
     public static final class string {
         public static final int action_add=0x7f040007;
         public static final int action_search=0x7f040006;
+        public static final int action_settings=0x7f040012;
         public static final int app_name=0x7f040005;
         public static final int bmob_im_notification_contact=0x7f040003;
         public static final int bmob_im_notification_have=0x7f040000;
@@ -327,6 +370,9 @@ containing a value of this type.
         /**  Fragment-Chat 
          */
         public static final int fragment_chat_title=0x7f040010;
+        /**  <string name="app_name">DisplayDynamic</string> 
+         */
+        public static final int hello_world=0x7f040011;
         public static final int menu_addfriend=0x7f04000a;
         public static final int menu_feedback=0x7f040009;
         public static final int menu_group_chat=0x7f040008;

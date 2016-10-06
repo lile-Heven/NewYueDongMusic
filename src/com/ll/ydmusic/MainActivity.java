@@ -27,7 +27,7 @@ import com.imooc.weixin6_0.R;
 import com.ll.ydmusic.fragment_f4.FragmentFirst_Chat;
 import com.ll.ydmusic.fragment_f4.FragmentForth_Me;
 import com.ll.ydmusic.fragment_f4.FragmentSecond_Contact;
-import com.ll.ydmusic.fragment_f4.FragmentThird_Friends;
+import com.ll.ydmusic.fragment_f4.FragmentThird_Find;
 import com.ll.ydmusic.musicmain.LaunchActivity;
 /**
  * 这是有四个变色自定义view的主界面Activity
@@ -124,7 +124,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		FragmentSecond_Contact mFragmentSecond_Contact=new FragmentSecond_Contact();
 		mFragmentList.add(mFragmentSecond_Contact);
 		
-		FragmentThird_Friends mFragment_Find=new FragmentThird_Friends();
+		FragmentThird_Find mFragment_Find=new FragmentThird_Find();
 		mFragmentList.add(mFragment_Find);
 		
 		FragmentForth_Me mForth_Me=new FragmentForth_Me();

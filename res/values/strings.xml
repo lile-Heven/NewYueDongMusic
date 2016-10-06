@@ -15,5 +15,10 @@
     
     <!-- Fragment-Chat -->
     <string name="fragment_chat_title">\t\t\t悦动的世界因你而精彩！\t\t\t</string>
+    
+    
+    <!-- <string name="app_name">DisplayDynamic</string> -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

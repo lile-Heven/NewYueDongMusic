@@ -77,6 +77,12 @@
         </activity>
         <activity android:name="com.ll.ydmusic.musicmain.LaunchViewPagerActivity" >
         </activity>
+        <!-- 朋友圈Activity -->
+        <activity
+            android:name="com.ll.ydmusic.frgmentfind.FriendsCircle_MainActivity"
+             >
+            
+        </activity>
         
         <!-- <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver" >
         	<intent-filter>

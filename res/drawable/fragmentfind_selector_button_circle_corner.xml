@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 压下去时 -->
+    <item android:state_pressed="true" 
+        	android:drawable="@drawable/fragmentfind_shape_button_circle_corner_pressed"></item>
+    	 	
+    <!-- 正常时 -->
+    <item android:drawable="@drawable/fragmentfind_shape_button_circle_corner"></item>
+			
+   			
+</selector>
